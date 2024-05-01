@@ -22,8 +22,3 @@ def embed_image(image_path):
     with torch.no_grad():
         output = model(image_tensor.unsqueeze(0)).squeeze().tolist()
     return {"result": output}
-
-# Example usage
-image_path = 'path/to/your/image.jpg'
-embedding = embed_image(image_path)
-print(embedding)
