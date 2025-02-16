@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - SERVICE_FQDN_APPWRITE_3000
+      - SERVICE_FQDN_APPWRITE_8000
     restart: unless-stopped
     entrypoint: ["python", "-u", "/rp_handler.py", "--rp_serve_api"]
