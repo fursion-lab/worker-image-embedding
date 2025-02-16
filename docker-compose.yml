@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    expost:
+    expose:
       - "8000"
     restart: unless-stopped
     entrypoint: ["python", "-u", "/rp_handler.py", "--rp_serve_api"]
