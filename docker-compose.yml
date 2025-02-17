@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - SERVICE_FQDN_APPWRITE_8000
+      - SERVICE_FQDN_APP_8000
     expose:
       - "8000"
     restart: unless-stopped
