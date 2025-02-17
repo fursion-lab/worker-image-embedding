@@ -49,6 +49,7 @@ RUN python /fetch_models.py && \
 
 # Copy source code into image
 COPY src .
-
+# Expose default port
+EXPOSE 8000
 # Set default command
 CMD python -u /rp_handler.py
