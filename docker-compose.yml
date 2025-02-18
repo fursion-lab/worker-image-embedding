@@ -4,8 +4,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
     environment:
       - SERVICE_FQDN_APP_8000
+      - PORT=${PORT}
     expose:
       - "8000"
     restart: unless-stopped
